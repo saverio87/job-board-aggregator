@@ -43,8 +43,13 @@
   <key>StandardErrorPath</key>
   <string>/Users/sav87/Desktop/AI/learn/job-board-aggregator/data/run.log</string>
 
-  <!-- Do not run on load; wait for the scheduled time. -->
+  <!--
+    Run at load as well as on the schedule. This is the catch-up: if the machine
+    was shut down at 07:30 the calendar event is lost entirely, so the job runs on
+    the next boot or login instead. It is not expensive — cadence is compared by
+    calendar date, so a run that already happened today does nothing.
+  -->
   <key>RunAtLoad</key>
-  <false/>
+  <true/>
 </dict>
 </plist>

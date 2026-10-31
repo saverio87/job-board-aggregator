@@ -117,18 +117,56 @@ corpus is already there.
 
 ## Scheduling
 
-`deploy/com.jobboard.aggregator.plist` runs `run.py all --publish` daily.
+`deploy/com.jobboard.aggregator.plist` runs `run.py all --publish` daily at 07:30.
 
 ```sh
 cp deploy/com.jobboard.aggregator.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/com.jobboard.aggregator.plist
 ```
 
-`launchd` is used rather than `cron` on purpose: `cron` silently skips a job if the
-machine was asleep at the appointed minute, while `launchd`'s `StartCalendarInterval`
-runs the missed job when the machine wakes.
+Check the `Python` path in the plist matches your interpreter (`which python3`).
 
-Check `Python` in the plist matches your interpreter (`which python3`).
+**What happens if the machine is asleep at 07:30.** It runs on wake.
+`StartCalendarInterval` coalesces missed events, which is the reason for using
+`launchd` rather than `cron` — `cron` silently drops a job it slept through.
+
+**What happens if the machine is shut down at 07:30.** A calendar event that passes
+while the machine is *off* is lost; `launchd` does not backfill past events on boot.
+So `RunAtLoad` is set, and the job also fires at login. It is cheap to do this
+because cadence is compared by **calendar date**: if a run already happened today,
+the job looks, finds nothing to do, and exits.
+
+The date comparison also fixes a subtler bug. Comparing *elapsed time* against a
+24-hour threshold means a run that starts at 07:30 and finishes at 07:34 is
+recorded four minutes late, so the next day at 07:30 only 23h56m have passed and
+the job skips — running every other day, indefinitely, with nothing to show for it.
+
+**How you learn about a run.** Three channels, in order of reliability:
+
+1. `data/run.log` — everything, always, because the plist sends both stdout and
+   stderr there.
+2. The **fetch health strip** on the dashboard. It carries each source's status and
+   last-run time, and the page header shows when it was last generated. A stale
+   page is visible rather than plausible.
+3. A **macOS notification**, sent only on failure and only when headless (running
+   under `launchd`, not from a terminal, where the output is already in front of
+   you). Best-effort: it needs you logged in, and macOS may ask permission the
+   first time. Do not rely on it as the primary signal.
+
+To check by hand: `python3 run.py status`.
+
+**Publishing needs two things from you.** The plist passes `--publish`, which
+commits and pushes `docs/`. That requires git credentials to work without a
+terminal. Your SSH key has no passphrase, so a push over SSH works headlessly —
+verify the remote uses `git@github.com:…` rather than `https://`, because an HTTPS
+remote needs a stored token instead. It also needs an author identity:
+
+```sh
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+Without it the publish step stops and says so rather than failing cryptically.
 
 ## Publishing
 

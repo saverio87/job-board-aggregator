@@ -14,6 +14,7 @@ The one scheduled command is `all`. Everything else exists for working on it.
 
 import argparse
 import os
+import subprocess
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -32,15 +33,50 @@ from core.store import Store
 
 
 def is_due(store, sid):
+    """Has this source's cadence come round?
+
+    Daily sources are compared by *calendar date*, not by elapsed time. Elapsed
+    time has an off-by-a-few-minutes bug that quietly halves the schedule: a run
+    that starts at 07:30 and takes four minutes is recorded at 07:34, so the next
+    day at 07:30 only 23h56m have passed and the job skips — running every other
+    day forever.
+
+    Comparing dates also gives free catch-up. If the machine was off at 07:30 and
+    boots at 09:00, no successful run exists for today's date, so the job runs.
+    """
     last = store.last_success(sid)
     if not last:
         return True
-    days = config.CADENCE_DAYS.get(sid, 1)
     try:
-        ran = datetime.fromisoformat(last["ran_at"])
+        ran = datetime.fromisoformat(last["ran_at"]).astimezone()
     except ValueError:
         return True
-    return datetime.now(timezone.utc) - ran >= timedelta(days=days)
+
+    days = config.CADENCE_DAYS.get(sid, 1)
+    if days <= 1:
+        return ran.date() != datetime.now().astimezone().date()
+    return (datetime.now(timezone.utc) - ran) >= timedelta(days=days)
+
+
+def notify(title, message):
+    """Post a macOS notification. Best-effort: never fail a run over it.
+
+    Only used to report failure. A notification from a launchd agent needs the
+    user logged in, and macOS may gate it behind a permission prompt the first
+    time, so treat it as a convenience rather than a guarantee — the log file and
+    the dashboard's health strip are the channels you can rely on.
+    """
+    def applescript(s):
+        return '"' + str(s).replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+    try:
+        subprocess.run(
+            ["osascript", "-e",
+             f"display notification {applescript(message)} with title {applescript(title)}"],
+            capture_output=True, timeout=15,
+        )
+    except Exception:
+        pass
 
 
 def cmd_fetch(store, args):
@@ -107,8 +143,6 @@ def cmd_publish(store, args):
     So a failed push is reported as a failure, and the page carries its own
     generation timestamp for the same reason.
     """
-    import subprocess
-
     def git(*a, check=True):
         return subprocess.run(["git", *a], capture_output=True, text=True, check=check)
 
@@ -117,6 +151,16 @@ def cmd_publish(store, args):
     except (subprocess.CalledProcessError, FileNotFoundError):
         print("  publish: not a git repository — skipping")
         return []
+
+    # A commit with no author identity fails outright, and under launchd there is
+    # no terminal to explain why. Catch it here with the fix in the message.
+    name = git("config", "user.name", check=False).stdout.strip()
+    email = git("config", "user.email", check=False).stdout.strip()
+    if not name or not email:
+        print("  publish: git identity not configured — commits would fail. Run:")
+        print('           git config --global user.name "Your Name"')
+        print('           git config --global user.email "you@example.com"')
+        return ["publish"]
 
     git("add", "docs")
     status = git("status", "--porcelain", "docs").stdout.strip()
@@ -210,6 +254,12 @@ def main():
 
     # A source that errored is worth a non-zero exit so a scheduled run surfaces
     # the failure instead of passing quietly.
+    #
+    # Notify only when headless. Under launchd stdout is a file and nobody is
+    # watching; interactively it is a terminal and the output above is right there.
+    if failed and not sys.stdout.isatty():
+        notify("Job board run had problems", f"{', '.join(failed)} — see data/run.log")
+
     return 1 if failed else 0
 
 
