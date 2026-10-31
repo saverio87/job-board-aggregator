@@ -1,0 +1,9 @@
+# The corpus is rebuilt from scratch on every run and is large; it does not belong
+# in git. docs/ is the opposite — it is the published output and must be committed.
+data/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local overrides you may want to keep out of the repo
+config_local.py

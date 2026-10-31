@@ -1,0 +1,552 @@
+<title>Where the Data Lives</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap">
+<style>
+/* ── Design plan ───────────────────────────────────────────────────────────
+   Colour:   cool slate paper + ink, teal accent for "this is the data",
+             amber held back for traps and warnings only.
+   Type:     IBM Plex Serif for headings (technical gravitas), IBM Plex Sans
+             for reading, IBM Plex Mono for headers, URLs and code — the
+             subject's own material.
+   Layout:   one reading column at ~68ch, full-width figure and code panels.
+   ──────────────────────────────────────────────────────────────────────── */
+:root{
+  --paper:#f5f7f9; --panel:#ffffff; --panel-2:#eceff3;
+  --ink:#161a1f; --ink-soft:#505a66; --ink-faint:#7d8794;
+  --rule:#d8dde5; --rule-soft:#e7ebf0;
+  --accent:#0d6d78; --accent-soft:#e0eff1; --accent-line:#8fc4ca;
+  --warn:#8f4708; --warn-soft:#fbeee0; --warn-line:#e0b483;
+  --max:68ch;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#111419; --panel:#181c23; --panel-2:#1e232b;
+    --ink:#e5e9ee; --ink-soft:#a2acb9; --ink-faint:#78828f;
+    --rule:#2b323b; --rule-soft:#232931;
+    --accent:#57c4d0; --accent-soft:#0f2e35; --accent-line:#2c6a72;
+    --warn:#e2a864; --warn-soft:#2c2318; --warn-line:#6b5030;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#111419; --panel:#181c23; --panel-2:#1e232b;
+  --ink:#e5e9ee; --ink-soft:#a2acb9; --ink-faint:#78828f;
+  --rule:#2b323b; --rule-soft:#232931;
+  --accent:#57c4d0; --accent-soft:#0f2e35; --accent-line:#2c6a72;
+  --warn:#e2a864; --warn-soft:#2c2318; --warn-line:#6b5030;
+  color-scheme:dark;
+}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px; line-height:1.62;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 6rem;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:44rem; margin:0 auto; display:flex; flex-direction:column; gap:0}
+h1,h2,h3,h4{font-family:"IBM Plex Serif",Georgia,serif; text-wrap:balance; margin:0; line-height:1.22}
+h1{font-size:clamp(1.9rem,5vw,2.6rem); font-weight:700; letter-spacing:-.015em}
+h2{font-size:clamp(1.3rem,3.4vw,1.6rem); font-weight:600; letter-spacing:-.01em}
+h3{font-size:1.06rem; font-weight:600; font-family:"IBM Plex Sans",sans-serif}
+p{margin:0}
+a{color:var(--accent)}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em}
+
+/* masthead */
+.masthead{display:flex; flex-direction:column; gap:1rem; padding-block:3.5rem 2.5rem; border-bottom:1px solid var(--rule)}
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-faint)}
+.standfirst{font-size:1.08rem; color:var(--ink-soft); max-width:60ch}
+
+section{padding-block:2.75rem; border-bottom:1px solid var(--rule-soft); display:flex; flex-direction:column; gap:1.1rem}
+section:last-of-type{border-bottom:0}
+.sec-num{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.14em; color:var(--accent); text-transform:uppercase}
+.sec-head{display:flex; flex-direction:column; gap:.45rem}
+
+/* method steps — a real sequence, so numbering carries information */
+ol.steps{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1.5rem; counter-reset:s}
+ol.steps>li{counter-increment:s; display:grid; grid-template-columns:2.2rem 1fr; gap:.9rem; align-items:start}
+ol.steps>li::before{
+  content:counter(s,decimal-leading-zero);
+  font-family:"IBM Plex Mono",monospace; font-size:.78rem; color:var(--accent);
+  padding-top:.35rem; border-top:1px solid var(--accent-line);
+}
+ol.steps>li>div{display:flex; flex-direction:column; gap:.55rem; min-width:0}
+ol.steps h3{margin:0}
+
+figure{margin:0; display:flex; flex-direction:column; gap:.85rem}
+.figbox{background:var(--panel); border:1px solid var(--rule); border-radius:8px; padding:1.1rem .9rem; overflow-x:auto}
+figure svg{display:block; width:100%; min-width:640px; height:auto}
+figcaption{font-size:.86rem; color:var(--ink-soft); line-height:1.55; max-width:62ch}
+figcaption b{color:var(--ink); font-weight:600}
+
+/* code / terminal panels */
+pre{
+  margin:0; background:var(--panel-2); border:1px solid var(--rule-soft); border-radius:7px;
+  padding:.85rem 1rem; overflow-x:auto; font-family:"IBM Plex Mono",monospace;
+  font-size:.82rem; line-height:1.6; color:var(--ink);
+}
+pre b{color:var(--accent); font-weight:500}
+.cmd{background:var(--panel-2); border:1px solid var(--rule-soft); border-radius:7px; padding:.7rem .9rem;
+  font-family:"IBM Plex Mono",monospace; font-size:.82rem; overflow-x:auto; white-space:pre}
+
+/* tables */
+.tbl{overflow-x:auto; border:1px solid var(--rule); border-radius:8px; background:var(--panel)}
+table{border-collapse:collapse; width:100%; min-width:34rem; font-size:.88rem}
+th,td{text-align:left; padding:.6rem .85rem; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+th{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); font-weight:500; background:var(--panel-2)}
+tr:last-child td{border-bottom:0}
+td.m{font-family:"IBM Plex Mono",monospace; font-size:.82rem; white-space:nowrap}
+.tbl.narrow table{min-width:0}
+.fits{font-variant-numeric:tabular-nums}
+
+/* callouts */
+.note{border-left:3px solid var(--accent-line); background:var(--accent-soft); padding:.85rem 1.05rem; border-radius:0 7px 7px 0; font-size:.94rem}
+.trap{border-left:3px solid var(--warn-line); background:var(--warn-soft); padding:.85rem 1.05rem; border-radius:0 7px 7px 0; font-size:.94rem}
+.trap .lbl{font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--warn); display:block; margin-bottom:.3rem}
+.note .lbl{font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:.3rem}
+.trap p+p,.note p+p{margin-top:.55rem}
+
+/* case files */
+.case{background:var(--panel); border:1px solid var(--rule); border-radius:8px; padding:1.05rem 1.15rem; display:flex; flex-direction:column; gap:.7rem}
+.case-hd{display:flex; flex-wrap:wrap; gap:.55rem; align-items:baseline; justify-content:space-between}
+.case-hd h3{font-family:"IBM Plex Mono",monospace; font-size:.94rem; font-weight:500}
+.pill{font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase;
+  padding:.2rem .5rem; border-radius:4px; background:var(--accent-soft); color:var(--accent); border:1px solid var(--accent-line); white-space:nowrap}
+.case dl{margin:0; display:flex; flex-direction:column; gap:.35rem; font-size:.89rem}
+.case dt{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-faint)}
+.case dd{margin:0 0 .2rem}
+.cases{display:flex; flex-direction:column; gap:1rem}
+
+/* glossary */
+dl.gloss{margin:0; display:flex; flex-direction:column; gap:1rem}
+dl.gloss>div{display:grid; grid-template-columns:1fr; gap:.2rem}
+dl.gloss dt{font-family:"IBM Plex Mono",monospace; font-size:.86rem; font-weight:500; color:var(--accent)}
+dl.gloss dd{margin:0; font-size:.94rem; color:var(--ink-soft)}
+
+/* checklist */
+ul.check{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.6rem}
+ul.check li{display:grid; grid-template-columns:1.1rem 1fr; gap:.7rem; font-size:.95rem}
+ul.check li::before{content:"›"; color:var(--accent); font-family:"IBM Plex Mono",monospace; font-weight:500}
+
+@media (max-width:520px){
+  body{font-size:16px}
+  ol.steps>li{grid-template-columns:1.6rem 1fr; gap:.6rem}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="kicker">Recon field notes · job board aggregation</div>
+    <h1>Where the Data Lives</h1>
+    <p class="standfirst">How I worked out, site by site, whether each job board serves its data as an API, hides it inside the page, or hands it over as plain HTML — and why "does it have an API?" was the wrong question to start with.</p>
+  </header>
+
+  <!-- 1 ─────────────────────────────────────────────────────────────── -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">Section 01</div>
+      <h2>The wrong question</h2>
+    </div>
+    <p>I started out asking each site <em>does it have an API?</em> That question is a trap. It is a yes/no that hides everything useful, and both answers mislead.</p>
+    <p>A site can have no API and still hand you clean structured data. <strong>teast.co</strong> has no API at all and turned out to be the easiest of the five to read. A site can also have a perfectly good API that returns almost nothing: <strong>eslcafe.com</strong> offers a real JSON endpoint whose list response carries five fields and no job description.</p>
+    <p>The question that actually pays is this: <strong>where does the data live, and how many steps does it take to get it?</strong> Everything in this document comes out of that one.</p>
+  </section>
+
+  <!-- 2 ─────────────────────────────────────────────────────────────── -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">Section 02</div>
+      <h2>Four ways data reaches a page</h2>
+    </div>
+    <p>When you ask a server for a web page, the data you want gets to your screen in one of four ways. Almost every site you meet uses one of these, and identifying which one is the whole job.</p>
+
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 980 660" role="img" aria-label="Four patterns for how job data reaches a browser. Server-rendered and embedded JSON deliver the data in a single request; API calls and HTML fragments need a second request.">
+          <defs>
+            <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/>
+            </marker>
+          </defs>
+
+          <!-- row 0 : server-rendered -->
+          <g>
+            <text x="14" y="62" font-family="IBM Plex Mono, monospace" font-size="14" fill="currentColor">Server-rendered</text>
+            <text x="14" y="82" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-faint)">1 request</text>
+            <rect x="150" y="26" width="130" height="64" rx="6" fill="var(--panel)" stroke="currentColor" stroke-width="1.2"/>
+            <text x="215" y="63" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="currentColor">Server</text>
+            <rect x="830" y="26" width="130" height="64" rx="6" fill="var(--panel)" stroke="currentColor" stroke-width="1.2"/>
+            <text x="895" y="63" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="currentColor">Browser</text>
+            <line x1="282" y1="46" x2="826" y2="46" stroke="var(--accent)" stroke-width="1.8" marker-end="url(#ar)"/>
+            <text x="555" y="38" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--accent)">full page, data already in the markup</text>
+          </g>
+
+          <!-- row 1 : API call -->
+          <g transform="translate(0,150)">
+            <text x="14" y="62" font-family="IBM Plex Mono, monospace" font-size="14" fill="currentColor">API call</text>
+            <text x="14" y="82" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-faint)">2 requests</text>
+            <rect x="150" y="26" width="130" height="64" rx="6" fill="var(--panel)" stroke="currentColor" stroke-width="1.2"/>
+            <text x="215" y="63" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="currentColor">Server</text>
+            <rect x="830" y="26" width="130" height="64" rx="6" fill="var(--panel)" stroke="currentColor" stroke-width="1.2"/>
+            <text x="895" y="63" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="currentColor">Browser</text>
+            <line x1="282" y1="42" x2="826" y2="42" stroke="currentColor" stroke-opacity=".45" stroke-width="1.4" marker-end="url(#ar)"/>
+            <text x="555" y="34" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--ink-faint)">HTML shell — no data in it</text>
+            <line x1="826" y1="76" x2="282" y2="76" stroke="var(--accent)" stroke-width="1.8" marker-end="url(#ar)"/>
+            <text x="555" y="94" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--accent)">JS calls /api/… → JSON</text>
+          </g>
+
+          <!-- row 2 : embedded JSON -->
+          <g transform="translate(0,300)">
+            <text x="14" y="62" font-family="IBM Plex Mono, monospace" font-size="14" fill="currentColor">Embedded JSON</text>
+            <text x="14" y="82" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-faint)">1 request</text>
+            <rect x="150" y="26" width="130" height="64" rx="6" fill="var(--panel)" stroke="currentColor" stroke-width="1.2"/>
+            <text x="215" y="63" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="currentColor">Server</text>
+            <rect x="830" y="26" width="130" height="64" rx="6" fill="var(--panel)" stroke="currentColor" stroke-width="1.2"/>
+            <text x="895" y="63" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="currentColor">Browser</text>
+            <line x1="282" y1="46" x2="826" y2="46" stroke="var(--accent)" stroke-width="1.8" marker-end="url(#ar)"/>
+            <text x="555" y="38" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--accent)">HTML with the data buried inside it, as JSON</text>
+          </g>
+
+          <!-- row 3 : HTML fragments -->
+          <g transform="translate(0,450)">
+            <text x="14" y="62" font-family="IBM Plex Mono, monospace" font-size="14" fill="currentColor">HTML fragments</text>
+            <text x="14" y="82" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-faint)">2 requests</text>
+            <rect x="150" y="26" width="130" height="64" rx="6" fill="var(--panel)" stroke="currentColor" stroke-width="1.2"/>
+            <text x="215" y="63" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="currentColor">Server</text>
+            <rect x="830" y="26" width="130" height="64" rx="6" fill="var(--panel)" stroke="currentColor" stroke-width="1.2"/>
+            <text x="895" y="63" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="currentColor">Browser</text>
+            <line x1="282" y1="42" x2="826" y2="42" stroke="currentColor" stroke-opacity=".45" stroke-width="1.4" marker-end="url(#ar)"/>
+            <text x="555" y="34" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--ink-faint)">HTML shell — no data in it</text>
+            <line x1="826" y1="76" x2="282" y2="76" stroke="var(--accent)" stroke-width="1.8" marker-end="url(#ar)"/>
+            <text x="555" y="94" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--accent)">JS asks for HTML → gets a fragment</text>
+          </g>
+        </svg>
+      </div>
+      <figcaption><b>Teal arrows carry the job data. Grey arrows don't.</b> The two one-request patterns ride along with the page itself. The two two-request patterns need the browser to go back and ask separately — and that second answer is either JSON (a real API) or more HTML (a fragment). The distinction that matters most is the one between rows two and three: both involve JSON, but in one the browser has to fetch it and in the other it is already sitting in the page.</figcaption>
+    </figure>
+
+    <h3>The one people miss</h3>
+    <p>Row three is where most people — including me, in this very investigation — get it wrong. You fetch a page, search the visible HTML for job titles, find none, and conclude "the data is loaded by JavaScript, I'll need a browser."</p>
+    <p>Then you look a little harder and find 182 jobs sitting right there in the page, as JSON inside a script tag. No browser needed. Nothing was ever hidden; I was just looking in the wrong part of the file. That is exactly what happened on <strong>jobs.echinacities.com</strong>.</p>
+    <div class="note">
+      <span class="lbl">The habit that fixes this</span>
+      <p>When the visible markup has no content, don't reach for a browser. Reach for a text search across the <em>whole</em> file for a field name you'd expect in the data — <code>company_name</code>, <code>salary</code>, <code>jobTitle</code>. If it appears, the data is embedded and you can have it in one request.</p>
+    </div>
+
+    <h3>It's per page, not per site</h3>
+    <p>One more thing worth internalising: a single site can use different patterns on different pages. It is never "this site is an API site." <strong>timeshighereducation.com</strong> serves its job <em>list</em> as an embedded JSON blob but its job <em>detail</em> pages as fully server-rendered HTML. You ask the question per page, not per domain.</p>
+  </section>
+
+  <!-- 3 ─────────────────────────────────────────────────────────────── -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">Section 03</div>
+      <h2>How to tell which one you're looking at</h2>
+    </div>
+    <p>There's no cleverness to this. It is a short, boring, repeatable sequence — and the boring part is the point, because it works the same way on a site you've never seen.</p>
+
+    <ol class="steps">
+      <li>
+        <div>
+          <h3>Ask for the page, and read the headers before the HTML</h3>
+          <p>Headers are small, honest, and often name the platform outright. Reading them first saves you from reading 200,000 characters of markup to learn something that was in the first five lines of the response.</p>
+          <div class="cmd">curl -sS -D - -o /dev/null https://example.com/</div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Check <code>robots.txt</code> and the sitemap</h3>
+          <p>Two things at once: whether you're welcome, and sometimes a full inventory. <strong>echinacareers.com</strong> has neither a robots file nor a sitemap — itself a useful signal about how well maintained it is. <strong>eslcafe.com</strong>, by contrast, allows crawling and publishes a working sitemap.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Count the yield before anything else</h3>
+          <p>Do this early, because it can end the investigation. If a board carries none of the jobs you care about, it does not matter how clean its API is. <strong>eslcafe.com</strong> has the cleanest API of the five and carried exactly one relevant job out of 304 — which told me not to lean on it.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Look for the data in three places, in this order</h3>
+          <p><strong>First</strong> the visible markup. <strong>Second</strong> the script tags and any JavaScript variables — this is the embedded-JSON case, and it's the one skipped by reflex. <strong>Third</strong>, only if the first two come up empty, the linked JavaScript files, looking for a URL that a request gets sent to.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Probe every URL you find, and read what comes back</h3>
+          <p>Status code, <code>content-type</code>, and the actual shape of the body. This is where you find out whether the thing you found is a real data endpoint or just more presentation.</p>
+          <div class="cmd">curl -sS -D - -o body.txt 'https://example.com/api/list?page=1'</div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Work out the parameters by reading the markup, not by guessing names</h3>
+          <p>This one cost me real time. On <strong>jobs.echinacities.com</strong> I guessed four plausible page-parameter names in a row; all four returned identical data with no error, which looks exactly like "this site doesn't paginate." The right answer was in the <code>href</code> of the pagination links, where I should have looked first.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Write down the traps while they're fresh</h3>
+          <p>Every site has at least one behaviour that will silently corrupt a scheduled job. They are invisible later and expensive to rediscover, so record them the moment you find them.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 4 ─────────────────────────────────────────────────────────────── -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">Section 04</div>
+      <h2>Signals, and what they tell you</h2>
+    </div>
+    <p>Most of the identification work is pattern-matching on things you can see in the first minute. These are the ones that actually came up.</p>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>What you see</th><th>What it means</th></tr></thead>
+        <tbody>
+          <tr><td class="m">content-type: application/json</td><td>A real data endpoint. This is the thing you were hoping for.</td></tr>
+          <tr><td class="m">content-type: text/html</td><td>Markup, even on a URL that looks like an API. The payload is presentation, not data.</td></tr>
+          <tr><td class="m">x-powered-by: Next.js<br>server: Vercel</td><td>A React site. Look for <code>__NEXT_DATA__</code> — the data is usually embedded.</td></tr>
+          <tr><td class="m">x-aspnetmvc-version</td><td>Microsoft's web framework. Look in the JavaScript for <code>$.ajax</code> calls.</td></tr>
+          <tr><td class="m">Set-Cookie: PHPSESSID</td><td>PHP behind it.</td></tr>
+          <tr><td class="m">server: openresty</td><td>Fancy nginx. Tells you about the host, not the application.</td></tr>
+          <tr><td class="m">x-madgex-proxy</td><td>This isn't a bespoke site at all — it's a job-board platform, and the same findings will transfer to other boards on it.</td></tr>
+          <tr><td class="m">ng-app, v-model</td><td>Angular or Vue. The data is either fetched separately or embedded.</td></tr>
+          <tr><td class="m">{{item.company}}</td><td>Template placeholders in the HTML. The data is <em>not</em> there yet — something fills these in later.</td></tr>
+          <tr><td class="m">__NEXT_DATA__, __NUXT__</td><td>Embedded JSON. The whole page's data is in a script tag, already delivered.</td></tr>
+          <tr><td class="m">$http.get, $.ajax, fetch(</td><td>A URL is being called. Find it — it's the answer.</td></tr>
+          <tr><td class="m">class="css-7f2q"</td><td>Machine-generated class names, typical of a React styling library. Confirms a modern React build.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5 ─────────────────────────────────────────────────────────────── -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">Section 05</div>
+      <h2>Five sites, five answers</h2>
+    </div>
+    <p>The same method, run five times, landing on four different patterns. Note how little of each answer was clever — most of it was reading a header and then looking in the right place.</p>
+
+    <div class="cases">
+
+      <div class="case">
+        <div class="case-hd">
+          <h3>eslcafe.com</h3>
+          <span class="pill">API call</span>
+        </div>
+        <dl>
+          <dt>Header said</dt>
+          <dd><code>x-aspnetmvc-version: 5.2</code>, <code>x-powered-by: ASP.NET</code> — Microsoft, server-side.</dd>
+          <dt>So I looked at</dt>
+          <dd>What scripts the page loads. It pulled in <code>angular.min.js</code> and a file called <code>app.js</code>.</dd>
+          <dt>Found</dt>
+          <dd>Inside the page's own controller: <code>var searchApiUrl = 'api/list/PostAJobList'</code>, called with <code>$http.get</code>. The site tells you its own endpoint if you read its JavaScript.</dd>
+          <dt>Calling it gave</dt>
+          <dd><code>application/json</code>, with a tidy envelope containing a <code>paging</code> block and a <code>data</code> array. A genuine API — the only one of the five.</dd>
+        </dl>
+      </div>
+
+      <div class="case">
+        <div class="case-hd">
+          <h3>echinacareers.com</h3>
+          <span class="pill">HTML fragments</span>
+        </div>
+        <dl>
+          <dt>Header said</dt>
+          <dd><code>server: Microsoft-IIS/10.0</code> with ASP.NET MVC 5. No React, no Angular — old-fashioned server rendering.</dd>
+          <dt>So I looked at</dt>
+          <dd>The page's script list, then the one custom file in it: <code>jobSearchJS.js</code>.</dd>
+          <dt>Found</dt>
+          <dd><code>$.ajax({ url: "/Jobs/JobSearchAJAX" })</code>, and the callback named the variable <code>partialViewResult</code>. The word <em>partial</em> is the tell.</dd>
+          <dt>Calling it gave</dt>
+          <dd><code>text/html</code> — a few dozen <code>&lt;div&gt;</code>s, not JSON. Not an API. The browser receives a prepared chunk of page and drops it straight into the document.</dd>
+        </dl>
+      </div>
+
+      <div class="case">
+        <div class="case-hd">
+          <h3>timeshighereducation.com/unijobs</h3>
+          <span class="pill">Server-rendered + embedded</span>
+        </div>
+        <dl>
+          <dt>Header said</dt>
+          <dd><code>x-madgex-proxy</code>. Not a bespoke build — a job-board platform, which matters because anything I learn here likely transfers.</dd>
+          <dt>So I looked at</dt>
+          <dd>The page for an RSS link, on the hunch that a job board would publish one.</dd>
+          <dt>Found</dt>
+          <dd>Two things. A feed at <code>/unijobs/jobsrss/</code> with real publication dates, and — better — a <code>ClientGoogleTagManagerDataLayer</code> object buried in the page containing the job's title, salary, posting date, employer and a full subject taxonomy as structured JSON.</dd>
+          <dt>Worth knowing</dt>
+          <dd>The structured data was sitting inside an analytics tracking block. Those blocks exist to feed Google, and they're the last place people think to look for data.</dd>
+        </dl>
+      </div>
+
+      <div class="case">
+        <div class="case-hd">
+          <h3>teast.co</h3>
+          <span class="pill">Embedded JSON</span>
+        </div>
+        <dl>
+          <dt>Header said</dt>
+          <dd><code>x-powered-by: Next.js</code>, <code>server: Vercel</code>. Modern React, which meant I had a strong prior before reading a single tag.</dd>
+          <dt>So I looked at</dt>
+          <dd>Straight for <code>__NEXT_DATA__</code>, the script tag Next.js uses to hand the page its data.</dd>
+          <dt>Found</dt>
+          <dd>Everything. The complete job list, each entry with roughly fifty fields — including the <em>full job description</em>, a structured subject tag list, and timestamps. All of it delivered with the page. No second request needed.</dd>
+          <dt>The catch</dt>
+          <dd>Knowing the platform told me where to look in about ten seconds. This is why reading headers first pays.</dd>
+        </dl>
+      </div>
+
+      <div class="case">
+        <div class="case-hd">
+          <h3>jobs.echinacities.com</h3>
+          <span class="pill">Embedded JSON</span>
+        </div>
+        <dl>
+          <dt>Header said</dt>
+          <dd><code>Set-Cookie: PHPSESSID</code>, served by OpenResty. PHP, likely templated server-side.</dd>
+          <dt>So I looked at</dt>
+          <dd>The visible markup for job listings. Found none, and concluded the page loads its results with JavaScript.</dd>
+          <dt>Wrong. Then found</dt>
+          <dd>After searching the <em>whole file</em> rather than the markup: <code>var _searchJobList = {"num":182, "list":[…]}</code>. All 182 results, embedded, one request, no browser required.</dd>
+          <dt>The lesson</dt>
+          <dd>I made the mistake this document warns about, in the middle of writing this document. "Not in the visible HTML" is not the same as "not in the response."</dd>
+        </dl>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6 ─────────────────────────────────────────────────────────────── -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">Section 06</div>
+      <h2>What fooled me</h2>
+    </div>
+    <p>These are the failures, because they generalize better than the successes do. Each one is a way a site tells you something untrue without ever returning an error.</p>
+
+    <div class="trap">
+      <span class="lbl">Trap 1 — the page number that lies</span>
+      <p><strong>teast.co</strong> took <code>?p=2</code>, parsed it correctly into its own query object, and returned page one anyway. <strong>jobs.echinacities.com</strong> ignored four different page parameters in a row and returned the same 25 jobs every time, while still reporting a total of 182.</p>
+      <p>A page parameter that silently returns page one is the most dangerous failure we hit, because it <em>looks like it works</em>. You'd page through, get repeated results, and conclude the site was smaller than it claimed — capturing six of thirty-two jobs forever, with nothing in any log to suggest otherwise.</p>
+      <p><strong>The guard:</strong> assert that each page's item IDs differ from the previous page's, and compare how many you collected against the total the source itself reports. That second check is free — the number is already in the payload.</p>
+    </div>
+
+    <div class="trap">
+      <span class="lbl">Trap 2 — the search that isn't a filter</span>
+      <p>The keyword search on <strong>jobs.echinacities.com</strong> returned 182 results for "Computer science." Filtering them properly left <strong>13</strong> that were actually computer-science teaching jobs — about seven percent precision.</p>
+      <p>A source's own search is a candidate generator, never a filter. Ask it for anything vaguely related, then do the real filtering yourself against fields you control.</p>
+    </div>
+
+    <div class="trap">
+      <span class="lbl">Trap 3 — the silent zero</span>
+      <p>On <strong>eslcafe.com</strong>, omit the <code>jobType</code> parameter and you get HTTP 200, a valid response envelope, and <em>zero rows</em>. No error, no warning. Omit <code>sortColumn</code> instead and you get a 500 with a full stack trace.</p>
+      <p>The zero is the dangerous one, because a scheduled job receiving zero results looks identical to a day with no new postings. <strong>Never treat an empty result as "nothing new" without a second signal that the request was well-formed.</strong></p>
+    </div>
+
+    <div class="trap">
+      <span class="lbl">Trap 4 — the parameter named for the opposite of what it does</span>
+      <p><strong>jobs.echinacities.com</strong> paginates with <code>per_page</code>. It looks like a page size. It is actually an <em>offset</em> — <code>per_page=50</code> means "skip the first fifty," not "fifty per page." The same page also has a genuine 25/50 results-per-page selector, so the name is doubly misleading.</p>
+      <p><strong>The general rule:</strong> when a parameter appears to do nothing, read the pagination links' <code>href</code> values. The site will tell you its own parameter names if you stop guessing and start reading.</p>
+    </div>
+
+    <div class="trap">
+      <span class="lbl">Trap 5 — no date where you need one</span>
+      <p><strong>echinacareers.com</strong>'s list data contains no date at all. The only posting date lives on each job's individual detail page, one request per job, rendered as relative prose: <em>"Posted 22 days ago."</em></p>
+      <p>So on echinacareers, filtering to "the last month" costs about a thousand requests, while taking everything costs a hundred. Filtering made it ten times more expensive.</p>
+      <p>And a relative date can't be reconstructed later — it's relative to when you fetched it. <strong>Record the date on the run where you first see a job, or lose it permanently.</strong></p>
+    </div>
+  </section>
+
+  <!-- 7 ─────────────────────────────────────────────────────────────── -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">Section 07</div>
+      <h2>The checklist</h2>
+    </div>
+    <p>Everything above, compressed to something you can run against a new site without re-reading the rest.</p>
+    <ul class="check">
+      <li>Fetch the page. Read <em>headers first</em>. Write down the platform.</li>
+      <li>Check <code>robots.txt</code> and the sitemap.</li>
+      <li>Count the yield — does this site even have your jobs? Stop here if it doesn't.</li>
+      <li>Search the whole file for an expected field name before looking for endpoints.</li>
+      <li>Visible markup → script tags and JS variables → linked JavaScript files. In that order.</li>
+      <li>Probe every URL you find. Note status, <code>content-type</code>, and body shape.</li>
+      <li>Never guess parameter names. Read the <code>href</code>s and the JavaScript.</li>
+      <li>Check whether the list data carries a date. If not, plan to record first-seen yourself.</li>
+      <li>Page through and confirm each page differs from the last.</li>
+      <li>Compare collected count against the source's own reported total.</li>
+      <li>Write the traps down immediately.</li>
+    </ul>
+  </section>
+
+  <!-- 8 ─────────────────────────────────────────────────────────────── -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">Section 08</div>
+      <h2>Plain-English glossary</h2>
+    </div>
+    <p>The vocabulary I used without explaining, now explained.</p>
+    <dl class="gloss">
+      <div>
+        <dt>API</dt>
+        <dd>A URL that answers with <em>data</em> rather than a web page. You ask for a thing and get back a description of it, ready for a program to read.</dd>
+      </div>
+      <div>
+        <dt>endpoint</dt>
+        <dd>One specific URL on a server that does one specific job. A site has many.</dd>
+      </div>
+      <div>
+        <dt>JSON</dt>
+        <dd>A way of writing structured data as plain text — labelled fields and values, in a format both humans and machines can read. The thing you want instead of HTML.</dd>
+      </div>
+      <div>
+        <dt>header</dt>
+        <dd>Small pieces of information the server sends alongside every response, before the actual content. Content type, server software, cookies. They're the fastest way to identify what you're dealing with.</dd>
+      </div>
+      <div>
+        <dt>content-type</dt>
+        <dd>The header that says what kind of thing is being sent. <code>application/json</code> means data; <code>text/html</code> means a web page. Half the identification work is reading this one line.</dd>
+      </div>
+      <div>
+        <dt>server-rendered</dt>
+        <dd>The server assembles the complete page, content included, before sending it. What arrives is what you see.</dd>
+      </div>
+      <div>
+        <dt>AJAX</dt>
+        <dd>A page fetching extra information from the server <em>after</em> it has loaded, without reloading. It's how a page updates a list without flickering.</dd>
+      </div>
+      <div>
+        <dt>hydration / embedded data</dt>
+        <dd>The server sends a page that already contains the data as a hidden JSON block, so the page's JavaScript can read it without a second request. Fast, and easy to miss when you're only reading the visible markup.</dd>
+      </div>
+      <div>
+        <dt>curl</dt>
+        <dd>A command-line tool for fetching a URL and showing exactly what came back — no browser, no rendering, no interpretation. Tells you what the server actually said.</dd>
+      </div>
+      <div>
+        <dt>partial / fragment</dt>
+        <dd>A chunk of HTML that isn't a complete page, sent so the browser can slot it into an existing one.</dd>
+      </div>
+      <div>
+        <dt>CORS</dt>
+        <dd>A rule <em>browsers</em> follow, not a lock on the server. Normally a web page at one site may not read data from another. A server that wants to allow it sends a permission header. If it doesn't, browsers refuse to hand the data to the page's JavaScript — but the server has already sent it, and any tool that isn't a browser ignores the rule entirely. It protects users from being silently spied on; it does not restrict you.</dd>
+      </div>
+      <div>
+        <dt>minified</dt>
+        <dd>Code with all its spacing, comments, and meaningful names stripped out to make the file smaller. Still readable by machine, still full of the URLs you're looking for — just unpleasant to read.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section style="border-bottom:0">
+    <p style="font-size:.9rem; color:var(--ink-faint)">Compiled from a single reconnaissance session across five job boards, October 2026. The per-source detail — endpoints, parameters, costs, pitfalls — lives in <span class="mono">source-registry.md</span> beside this file.</p>
+  </section>
+
+</div>
