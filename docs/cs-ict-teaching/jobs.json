@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T02:35:38+00:00",
+ "generated": "2026-11-02T00:38:39+00:00",
  "jobs": [
   {
    "id": 503,
@@ -20,7 +20,7 @@
    "tags_role": "",
    "dedupe_key": "36f09e85c1e61d8c",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125045, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free apartment\"], \"refresh_time\": \"Oct 30\"}",
    "matched_subject": [
@@ -52,7 +52,7 @@
    "tags_role": "",
    "dedupe_key": "24d0a09855dec039",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355126131, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free meal\", \"Free apartment\"], \"refresh_time\": \"Oct 29\"}",
    "matched_subject": [
@@ -83,7 +83,7 @@
    "tags_role": "",
    "dedupe_key": "203f06f5754fd0ae",
    "first_seen": "2026-10-31T04:40:18+00:00",
-   "last_seen": "2026-10-31T04:40:18+00:00",
+   "last_seen": "2026-11-02T00:37:12+00:00",
    "is_active": 1,
    "raw_json": "{\"jobTitle\": \"ESL and IT Teachers Needed for University Program in Luoyang, China + 12-16k RMB per month + no office hours + free apartment + flight reimbursement + paid holidays\", \"company\": \"US University Program at Luoyang\", \"slug\": \"esl-and-it-teachers-needed-for-university-pro\", \"statusStartDate\": \"2026-10-27T08:28:35.187\", \"isOpenNewTab\": false}",
    "matched_subject": [
@@ -114,7 +114,7 @@
    "tags_role": "",
    "dedupe_key": "6820b9e720548263",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355124521, \"job_type\": \"Part Time\", \"tage\": \"\", \"sktag\": [\"Air travel allowance\", \"Free apartment\"], \"refresh_time\": \"Oct 27\"}",
    "matched_subject": [
@@ -145,7 +145,7 @@
    "tags_role": "",
    "dedupe_key": "24d0a09855dec039",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125159, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free meal\", \"Free apartment\"], \"refresh_time\": \"Oct 27\"}",
    "matched_subject": [
@@ -176,7 +176,7 @@
    "tags_role": "",
    "dedupe_key": "5b2e033875baf227",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125667, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Paid annual leave\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free apartment\"], \"refresh_time\": \"Oct 26\"}",
    "matched_subject": [
@@ -208,7 +208,7 @@
    "tags_role": "",
    "dedupe_key": "c994ed605da41eec",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125033, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Air travel allowance\", \"Free apartment\"], \"refresh_time\": \"Oct 26\"}",
    "matched_subject": [
@@ -239,7 +239,7 @@
    "tags_role": "",
    "dedupe_key": "5116d7943f03e070",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125103, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work from home opportunities\", \"Flexible working hours\"], \"refresh_time\": \"Oct 23\"}",
    "matched_subject": [
@@ -271,43 +271,12 @@
    "tags_role": "",
    "dedupe_key": "89250d8fdfbea892",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355124729, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free meal\", \"Free apartment\"], \"refresh_time\": \"Oct 16\"}",
    "matched_subject": [
     "computer science",
     "comput(er|ing)s?"
-   ],
-   "matched_role": [
-    "\\bteach(er|ing|ers)\\b"
-   ],
-   "source_name": "eChinaCities Jobs",
-   "also_on": ""
-  },
-  {
-   "id": 661,
-   "source": "echinacities",
-   "src_job_id": "1355124717",
-   "title": "Middle School English&STEM Teacher-Xi'an",
-   "employer": "Shenzhen Fangke Investment Development Co., Ltd",
-   "src_employer_id": "",
-   "location_raw": "Xi'an",
-   "location_country": "",
-   "location_city": "Xi'an",
-   "salary_raw": "25000 - 35000 CNY /Month",
-   "posted_at": "2026-10-16",
-   "url": "https://jobs.echinacities.com/jobchapter/1355124717",
-   "apply_url": "",
-   "description_html": "Middle School English & STEM Teacher-Xian **Must Hold a PGCE or QTS Teaching Qualification **Native English speaker from a native English-speaking countries only We are looking for an experienced O...",
-   "tags_subject": "",
-   "tags_role": "",
-   "dedupe_key": "5d76ab8898dec881",
-   "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
-   "is_active": 1,
-   "raw_json": "{\"id\": 1355124717, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [], \"refresh_time\": \"Oct 16\"}",
-   "matched_subject": [
-    "\\bstem\\b"
    ],
    "matched_role": [
     "\\bteach(er|ing|ers)\\b"
@@ -334,7 +303,7 @@
    "tags_role": "",
    "dedupe_key": "3074a9c0e04821c7",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355123965, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Flexible working hours\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free apartment\"], \"refresh_time\": \"Oct 15\"}",
    "matched_subject": [
@@ -366,7 +335,7 @@
    "tags_role": "",
    "dedupe_key": "c994ed605da41eec",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355122427, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Air travel allowance\", \"Free apartment\"], \"refresh_time\": \"Oct 15\"}",
    "matched_subject": [
@@ -397,7 +366,7 @@
    "tags_role": "",
    "dedupe_key": "03a16a59d75287a3",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355124107, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [], \"refresh_time\": \"Oct 12\"}",
    "matched_subject": [
@@ -429,7 +398,7 @@
    "tags_role": "",
    "dedupe_key": "ae7751ce10df61e6",
    "first_seen": "2026-10-31T04:40:18+00:00",
-   "last_seen": "2026-10-31T04:40:18+00:00",
+   "last_seen": "2026-11-02T00:37:12+00:00",
    "is_active": 1,
    "raw_json": "{\"jobTitle\": \"international/bilingual school (Primary/Middle/High schools) ,Kindergartens, ESL, English lit, homeroom, Subject teaching jobs,Art, Music, Drama, PE, Math, Physics, Chemistry, Biology, ICT / Computer Science,Business, Economics, Social Studies, History, Geography, Psychology , >>up to 40K <<, ACROSS CHINA\", \"company\": \"Hangzhou Huiming International Education Technology Co., Ltd.\", \"slug\": \"internationalbilingual-school-primarymiddlehi\", \"statusStartDate\": \"2026-10-08T18:59:44.447\", \"isOpenNewTab\": false}",
    "matched_subject": [
@@ -462,7 +431,7 @@
    "tags_role": "",
    "dedupe_key": "4b789e3921b1b9e5",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355121489, \"job_type\": \"Part Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free apartment\"], \"refresh_time\": \"Sep 07\"}",
    "matched_subject": [
@@ -494,7 +463,7 @@
    "tags_role": "",
    "dedupe_key": "43b814376429c77d",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355093123, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [], \"refresh_time\": \"Jul 10\"}",
    "matched_subject": [
@@ -525,7 +494,7 @@
    "tags_role": "",
    "dedupe_key": "cb7a880397a85b51",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-10-31T04:43:22+00:00",
+   "last_seen": "2026-11-02T00:38:39+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355104909, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [], \"refresh_time\": \"May 20\"}",
    "matched_subject": [
@@ -536,6 +505,37 @@
     "\\bteach(er|ing|ers)\\b"
    ],
    "source_name": "eChinaCities Jobs",
+   "also_on": ""
+  },
+  {
+   "id": 1766,
+   "source": "the_unijobs",
+   "src_job_id": "417157",
+   "title": "Computing and Mathematical Sciences Division - Open Rank Faculty Positions in Computer Vision",
+   "employer": "MOHAMED BIN ZAYED UNIVERSITY OF ARTIFICIAL INTELLIGENCE",
+   "src_employer_id": "",
+   "location_raw": "Abu Dhabi, UAE",
+   "location_country": "",
+   "location_city": "",
+   "salary_raw": "Competitive",
+   "posted_at": "",
+   "url": "https://www.timeshighereducation.com \r\n\t/unijobs/listing/417157/computing-and-mathematical-sciences-division-open-rank-faculty-positions-in-computer-vision/?LinkSource=PremiumListing\r\n\r\n\r\n\r\n",
+   "apply_url": "",
+   "description_html": "",
+   "tags_subject": "",
+   "tags_role": "",
+   "dedupe_key": "181ba724b6c48a6a",
+   "first_seen": "2026-11-02T00:37:20+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
+   "is_active": 1,
+   "raw_json": "{\"discipline\": \"Computer Science\"}",
+   "matched_subject": [
+    "comput(er|ing)s?"
+   ],
+   "matched_role": [
+    "\\bfaculty\\b"
+   ],
+   "source_name": "THE UniJobs",
    "also_on": ""
   },
   {
@@ -557,7 +557,7 @@
    "tags_role": "",
    "dedupe_key": "cef40757628d2f0e",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -588,7 +588,7 @@
    "tags_role": "",
    "dedupe_key": "0e73e2e2945a4b72",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -620,7 +620,7 @@
    "tags_role": "",
    "dedupe_key": "905daedd643f2397",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -652,7 +652,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -684,7 +684,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -716,7 +716,7 @@
    "tags_role": "",
    "dedupe_key": "8543afba05ff96b8",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -747,7 +747,7 @@
    "tags_role": "",
    "dedupe_key": "9f085e47ce1fc604",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -779,7 +779,7 @@
    "tags_role": "",
    "dedupe_key": "238e454dcdeb97be",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -812,7 +812,7 @@
    "tags_role": "",
    "dedupe_key": "5699a69afff43e0d",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -844,7 +844,7 @@
    "tags_role": "",
    "dedupe_key": "60a73fc36e5e6ba1",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -876,7 +876,7 @@
    "tags_role": "",
    "dedupe_key": "e376d4c9427e0b75",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -907,7 +907,7 @@
    "tags_role": "",
    "dedupe_key": "0e73e2e2945a4b72",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -939,7 +939,7 @@
    "tags_role": "",
    "dedupe_key": "754310f75d720fc8",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -970,7 +970,7 @@
    "tags_role": "",
    "dedupe_key": "55736e42233aa1b0",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1001,7 +1001,7 @@
    "tags_role": "",
    "dedupe_key": "bcb7a1eb1e0247cb",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1033,7 +1033,7 @@
    "tags_role": "",
    "dedupe_key": "0e73e2e2945a4b72",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1065,7 +1065,7 @@
    "tags_role": "",
    "dedupe_key": "b45ab325d1c22334",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1097,7 +1097,7 @@
    "tags_role": "",
    "dedupe_key": "d186e8cbcbdfbce3",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1129,7 +1129,7 @@
    "tags_role": "",
    "dedupe_key": "fd5a409f63dc12e5",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1160,7 +1160,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1192,7 +1192,7 @@
    "tags_role": "",
    "dedupe_key": "2139e0e9afa086b1",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1224,7 +1224,7 @@
    "tags_role": "",
    "dedupe_key": "fd5a409f63dc12e5",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1255,7 +1255,7 @@
    "tags_role": "",
    "dedupe_key": "f02cfd8a9c5b079d",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1286,7 +1286,7 @@
    "tags_role": "",
    "dedupe_key": "2088529a831e530e",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1318,7 +1318,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1350,7 +1350,7 @@
    "tags_role": "",
    "dedupe_key": "97ebf405af5fbe96",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1381,7 +1381,7 @@
    "tags_role": "",
    "dedupe_key": "2c99a89ebd53c3a5",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1414,7 +1414,7 @@
    "tags_role": "",
    "dedupe_key": "2088529a831e530e",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1446,7 +1446,7 @@
    "tags_role": "",
    "dedupe_key": "dc658af818ac98ce",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1477,7 +1477,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1509,7 +1509,7 @@
    "tags_role": "",
    "dedupe_key": "791842a099bafb22",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-10-31T04:47:08+00:00",
+   "last_seen": "2026-11-02T00:38:29+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1540,7 +1540,7 @@
    "tags_role": "",
    "dedupe_key": "4c6b7a2ada15a5e0",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1571,7 +1571,7 @@
    "tags_role": "",
    "dedupe_key": "9eaad98948dfb403",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1602,7 +1602,7 @@
    "tags_role": "",
    "dedupe_key": "9c449be80de5783f",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1635,7 +1635,7 @@
    "tags_role": "",
    "dedupe_key": "348e1a2970ed7d6e",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1666,7 +1666,7 @@
    "tags_role": "",
    "dedupe_key": "385ab7ff35723df2",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1697,7 +1697,7 @@
    "tags_role": "",
    "dedupe_key": "f67f9d795bbbe050",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1728,7 +1728,7 @@
    "tags_role": "",
    "dedupe_key": "0ee228ae9b0d4666",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1761,7 +1761,7 @@
    "tags_role": "",
    "dedupe_key": "df360bc7cf6b0b25",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1793,7 +1793,7 @@
    "tags_role": "",
    "dedupe_key": "86289ed1d68bb424",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1826,7 +1826,7 @@
    "tags_role": "",
    "dedupe_key": "ce51b7902bdbf7fa",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1857,7 +1857,7 @@
    "tags_role": "",
    "dedupe_key": "0512ee3952c9da90",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1888,7 +1888,7 @@
    "tags_role": "",
    "dedupe_key": "76f38dd075ba9b8a",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1919,7 +1919,7 @@
    "tags_role": "",
    "dedupe_key": "251c6c217652b7ed",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1951,7 +1951,7 @@
    "tags_role": "",
    "dedupe_key": "85292c0f9b22bf97",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -1982,7 +1982,7 @@
    "tags_role": "",
    "dedupe_key": "d1ec721a28655010",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2013,7 +2013,7 @@
    "tags_role": "",
    "dedupe_key": "92ed78ff83309fb5",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2044,7 +2044,7 @@
    "tags_role": "",
    "dedupe_key": "e3411a51c1334bf3",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2075,7 +2075,7 @@
    "tags_role": "",
    "dedupe_key": "30804a4598b7b351",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2107,7 +2107,7 @@
    "tags_role": "",
    "dedupe_key": "f4c8021d9fae9daf",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2139,7 +2139,7 @@
    "tags_role": "",
    "dedupe_key": "3fba42adf9357156",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2172,7 +2172,7 @@
    "tags_role": "",
    "dedupe_key": "44cdb28eb8316338",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2205,7 +2205,7 @@
    "tags_role": "",
    "dedupe_key": "0a503ed93721d4d3",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2237,7 +2237,7 @@
    "tags_role": "",
    "dedupe_key": "6399a5e34ff16156",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2269,7 +2269,7 @@
    "tags_role": "",
    "dedupe_key": "3f9300d77abf09f7",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2302,7 +2302,7 @@
    "tags_role": "",
    "dedupe_key": "3bc5daf7c4827d4d",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2333,7 +2333,7 @@
    "tags_role": "",
    "dedupe_key": "c29ae0c8b64c2aca",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2364,7 +2364,7 @@
    "tags_role": "",
    "dedupe_key": "e0823d190ffffc42",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2396,7 +2396,7 @@
    "tags_role": "",
    "dedupe_key": "0be474a82c6c5f5f",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2429,7 +2429,7 @@
    "tags_role": "",
    "dedupe_key": "df03126b27da3f56",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2461,7 +2461,7 @@
    "tags_role": "",
    "dedupe_key": "1bf93ed301f15246",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2492,7 +2492,7 @@
    "tags_role": "",
    "dedupe_key": "73645c9b5b9b709f",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2524,7 +2524,7 @@
    "tags_role": "",
    "dedupe_key": "075173c4fbced91a",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2556,7 +2556,7 @@
    "tags_role": "",
    "dedupe_key": "823b806264fd2aaa",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2587,7 +2587,7 @@
    "tags_role": "",
    "dedupe_key": "052f39be905e15fa",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2619,7 +2619,7 @@
    "tags_role": "",
    "dedupe_key": "e4ab3c1c930dd620",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2651,7 +2651,7 @@
    "tags_role": "",
    "dedupe_key": "3f521347b2769282",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2682,7 +2682,7 @@
    "tags_role": "",
    "dedupe_key": "a39ddf94616cb3ef",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2715,7 +2715,7 @@
    "tags_role": "",
    "dedupe_key": "826156ab11adf5cd",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2747,7 +2747,7 @@
    "tags_role": "",
    "dedupe_key": "997a4738a0354eb9",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2779,7 +2779,7 @@
    "tags_role": "",
    "dedupe_key": "0d7f99b9aac63b25",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2811,7 +2811,7 @@
    "tags_role": "",
    "dedupe_key": "ab53eb461da993aa",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2843,7 +2843,7 @@
    "tags_role": "",
    "dedupe_key": "939b53b2c177a384",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2875,7 +2875,7 @@
    "tags_role": "",
    "dedupe_key": "fb5efde251a18fc3",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2908,7 +2908,7 @@
    "tags_role": "",
    "dedupe_key": "f783db962b5bb63f",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2940,7 +2940,7 @@
    "tags_role": "",
    "dedupe_key": "594cf1d93b41ece3",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -2973,7 +2973,7 @@
    "tags_role": "",
    "dedupe_key": "f313a1d9094394c0",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3006,7 +3006,7 @@
    "tags_role": "",
    "dedupe_key": "7f94396c295ddbb6",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3038,7 +3038,7 @@
    "tags_role": "",
    "dedupe_key": "f9dbe4c606c6ae40",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3069,7 +3069,7 @@
    "tags_role": "",
    "dedupe_key": "ceacd9cba1d1fc15",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3100,7 +3100,7 @@
    "tags_role": "",
    "dedupe_key": "dedc4469c3f1c098",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3132,7 +3132,7 @@
    "tags_role": "",
    "dedupe_key": "ffc21e557edaefd2",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3164,7 +3164,7 @@
    "tags_role": "",
    "dedupe_key": "aa3b5cb6ad10293b",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3196,7 +3196,7 @@
    "tags_role": "",
    "dedupe_key": "aeb650263eb01346",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3228,7 +3228,7 @@
    "tags_role": "",
    "dedupe_key": "869ccd779d200f5c",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3260,7 +3260,7 @@
    "tags_role": "",
    "dedupe_key": "313e33fd256a003b",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3292,7 +3292,7 @@
    "tags_role": "",
    "dedupe_key": "38c3da025a9a4449",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3325,7 +3325,7 @@
    "tags_role": "",
    "dedupe_key": "513ed27b86084799",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3357,46 +3357,12 @@
    "tags_role": "",
    "dedupe_key": "251c09e9f2f5814b",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
     "computer science",
     "comput(er|ing)s?"
-   ],
-   "matched_role": [
-    "\\bfaculty\\b"
-   ],
-   "source_name": "THE UniJobs",
-   "also_on": ""
-  },
-  {
-   "id": 477,
-   "source": "the_unijobs",
-   "src_job_id": "416124",
-   "title": "Tenure-Track or Tenured Faculty Position in Data science, Computer science and AI",
-   "employer": "TOKYO INTERNATIONAL UNIVERSITY",
-   "src_employer_id": "",
-   "location_raw": "Toshima-ku, Tokyo and Kawagoe, Saitama",
-   "location_country": "",
-   "location_city": "",
-   "salary_raw": "A competitive salary is offered. Remuneration package includes Health insurance, Pension, Commuting allowance, Annual research fund .",
-   "posted_at": "",
-   "url": "https://www.timeshighereducation.com \r\n\t/unijobs/listing/416124/tenure-track-or-tenured-faculty-position-in-data-science-computer-science-and-ai/\r\n\r\n\r\n\r\n",
-   "apply_url": "",
-   "description_html": "",
-   "tags_subject": "",
-   "tags_role": "",
-   "dedupe_key": "03a7ff72fb103c6f",
-   "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
-   "is_active": 1,
-   "raw_json": "{\"discipline\": \"Computer Science\"}",
-   "matched_subject": [
-    "computer science",
-    "comput(er|ing)s?",
-    "data science",
-    "\\bdata"
    ],
    "matched_role": [
     "\\bfaculty\\b"
@@ -3423,7 +3389,7 @@
    "tags_role": "",
    "dedupe_key": "e81aad3f8406e068",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3456,7 +3422,7 @@
    "tags_role": "",
    "dedupe_key": "c7b7dc81cad34c7e",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3488,7 +3454,7 @@
    "tags_role": "",
    "dedupe_key": "5c31c701197a0b0c",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3521,7 +3487,7 @@
    "tags_role": "",
    "dedupe_key": "948a84e07f9bcfae",
    "first_seen": "2026-10-31T04:40:56+00:00",
-   "last_seen": "2026-10-31T04:40:56+00:00",
+   "last_seen": "2026-11-02T00:37:20+00:00",
    "is_active": 1,
    "raw_json": "{\"discipline\": \"Computer Science\"}",
    "matched_subject": [
@@ -3538,31 +3504,31 @@
  "health": [
   {
    "name": "eslcafe",
-   "status": "warn",
-   "summary": "0 jobs · 0 req",
-   "ran_at": "2026-11-01T01:40:19+00:00",
-   "notes": "china/jobType=1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=china&jobType=1&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | china/jobType=2: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=china&jobType=2&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | korea/jobType=1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=korea&jobType=1&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | korea/jobType=2: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=korea&jobType=2&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | international/jobType=1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=international&jobType=1&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | international/jobType=2: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=international&jobType=2&sortColumn=SortOrder&sortType=asc&page=1&size=1000)"
+   "status": "ok",
+   "summary": "297/297 jobs · 6 req",
+   "ran_at": "2026-11-02T00:37:12+00:00",
+   "notes": ""
   },
   {
    "name": "the_unijobs",
-   "status": "warn",
-   "summary": "0 jobs · 0 req",
-   "ran_at": "2026-11-01T01:47:20+00:00",
-   "notes": "discipline 5 page 1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.timeshighereducation.com/unijobs/searchjobs/?AcademicDiscipline=5&sort=Date&page=1)"
+   "status": "ok",
+   "summary": "174/173 jobs · 9 req",
+   "ran_at": "2026-11-02T00:37:20+00:00",
+   "notes": ""
   },
   {
    "name": "echinacareers",
-   "status": "error",
-   "summary": "0 jobs · 0 req",
-   "ran_at": "2026-11-01T01:47:25+00:00",
-   "notes": "sitemap: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.echinacareers.com/Home/SiteMap)"
+   "status": "ok",
+   "summary": "1027/1027 jobs · 101 req",
+   "ran_at": "2026-11-02T00:38:29+00:00",
+   "notes": "96/100 employers had no jobs"
   },
   {
    "name": "echinacities",
-   "status": "warn",
-   "summary": "0 jobs · 0 req",
-   "ran_at": "2026-11-01T02:35:38+00:00",
-   "notes": "keyword 'computer' offset 0: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://jobs.echinacities.com/jobs/search/?employeeId=0&keyword=computer&lang=en) | keyword 'ICT' offset 0: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://jobs.echinacities.com/jobs/search/?employeeId=0&keyword=ICT&lang=en) | returned zero rows — treating as unverified, not as 'nothing new'"
+   "status": "ok",
+   "summary": "84 jobs · 5 req",
+   "ran_at": "2026-11-02T00:38:39+00:00",
+   "notes": ""
   }
  ]
 }
