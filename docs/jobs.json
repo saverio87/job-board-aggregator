@@ -1,6 +1,37 @@
 {
- "generated": "2026-11-02T00:38:39+00:00",
+ "generated": "2026-11-03T00:32:35+00:00",
  "jobs": [
+  {
+   "id": 1767,
+   "source": "echinacities",
+   "src_job_id": "1355126409",
+   "title": "Korean Computer Graphics Image Teacher",
+   "employer": "Sichuan International Talent Service Center(Chengdu) Co., Ltd.",
+   "src_employer_id": "",
+   "location_raw": "Changde",
+   "location_country": "",
+   "location_city": "Changde",
+   "salary_raw": "25000 - 35000 CNY /Month",
+   "posted_at": "2026-11-02",
+   "url": "https://jobs.echinacities.com/jobchapter/1355126409",
+   "apply_url": "",
+   "description_html": "Pls be noted this job is a short term one , which last for one month. And the visa is simple. The exact arriving time can be negotiated. This position is located in a very livable third tier city wit...",
+   "tags_subject": "",
+   "tags_role": "",
+   "dedupe_key": "dc6c43bc2a407a25",
+   "first_seen": "2026-11-03T00:32:35+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
+   "is_active": 1,
+   "raw_json": "{\"id\": 1355126409, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free apartment\"], \"refresh_time\": \"Nov 02\"}",
+   "matched_subject": [
+    "comput(er|ing)s?"
+   ],
+   "matched_role": [
+    "\\bteach(er|ing|ers)\\b"
+   ],
+   "source_name": "eChinaCities Jobs",
+   "also_on": ""
+  },
   {
    "id": 503,
    "source": "echinacities",
@@ -20,7 +51,7 @@
    "tags_role": "",
    "dedupe_key": "36f09e85c1e61d8c",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125045, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free apartment\"], \"refresh_time\": \"Oct 30\"}",
    "matched_subject": [
@@ -52,7 +83,7 @@
    "tags_role": "",
    "dedupe_key": "24d0a09855dec039",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355126131, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free meal\", \"Free apartment\"], \"refresh_time\": \"Oct 29\"}",
    "matched_subject": [
@@ -114,7 +145,7 @@
    "tags_role": "",
    "dedupe_key": "6820b9e720548263",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355124521, \"job_type\": \"Part Time\", \"tage\": \"\", \"sktag\": [\"Air travel allowance\", \"Free apartment\"], \"refresh_time\": \"Oct 27\"}",
    "matched_subject": [
@@ -145,7 +176,7 @@
    "tags_role": "",
    "dedupe_key": "24d0a09855dec039",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125159, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free meal\", \"Free apartment\"], \"refresh_time\": \"Oct 27\"}",
    "matched_subject": [
@@ -176,7 +207,7 @@
    "tags_role": "",
    "dedupe_key": "5b2e033875baf227",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125667, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Paid annual leave\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free apartment\"], \"refresh_time\": \"Oct 26\"}",
    "matched_subject": [
@@ -208,7 +239,7 @@
    "tags_role": "",
    "dedupe_key": "c994ed605da41eec",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125033, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Air travel allowance\", \"Free apartment\"], \"refresh_time\": \"Oct 26\"}",
    "matched_subject": [
@@ -239,7 +270,7 @@
    "tags_role": "",
    "dedupe_key": "5116d7943f03e070",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355125103, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work from home opportunities\", \"Flexible working hours\"], \"refresh_time\": \"Oct 23\"}",
    "matched_subject": [
@@ -271,7 +302,7 @@
    "tags_role": "",
    "dedupe_key": "89250d8fdfbea892",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355124729, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free meal\", \"Free apartment\"], \"refresh_time\": \"Oct 16\"}",
    "matched_subject": [
@@ -303,7 +334,7 @@
    "tags_role": "",
    "dedupe_key": "3074a9c0e04821c7",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355123965, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Flexible working hours\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free apartment\"], \"refresh_time\": \"Oct 15\"}",
    "matched_subject": [
@@ -335,7 +366,7 @@
    "tags_role": "",
    "dedupe_key": "c994ed605da41eec",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355122427, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [\"Air travel allowance\", \"Free apartment\"], \"refresh_time\": \"Oct 15\"}",
    "matched_subject": [
@@ -366,7 +397,7 @@
    "tags_role": "",
    "dedupe_key": "03a16a59d75287a3",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355124107, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [], \"refresh_time\": \"Oct 12\"}",
    "matched_subject": [
@@ -431,7 +462,7 @@
    "tags_role": "",
    "dedupe_key": "4b789e3921b1b9e5",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355121489, \"job_type\": \"Part Time\", \"tage\": \"\", \"sktag\": [\"Work visa\", \"Air travel allowance\", \"Medical & accidental insurance\", \"Free apartment\"], \"refresh_time\": \"Sep 07\"}",
    "matched_subject": [
@@ -463,7 +494,7 @@
    "tags_role": "",
    "dedupe_key": "43b814376429c77d",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355093123, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [], \"refresh_time\": \"Jul 10\"}",
    "matched_subject": [
@@ -494,7 +525,7 @@
    "tags_role": "",
    "dedupe_key": "cb7a880397a85b51",
    "first_seen": "2026-10-31T04:43:22+00:00",
-   "last_seen": "2026-11-02T00:38:39+00:00",
+   "last_seen": "2026-11-03T00:32:35+00:00",
    "is_active": 1,
    "raw_json": "{\"id\": 1355104909, \"job_type\": \"Full Time\", \"tage\": \"\", \"sktag\": [], \"refresh_time\": \"May 20\"}",
    "matched_subject": [
@@ -557,7 +588,7 @@
    "tags_role": "",
    "dedupe_key": "cef40757628d2f0e",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -588,7 +619,7 @@
    "tags_role": "",
    "dedupe_key": "0e73e2e2945a4b72",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -620,7 +651,7 @@
    "tags_role": "",
    "dedupe_key": "905daedd643f2397",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -652,7 +683,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -684,7 +715,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -716,7 +747,7 @@
    "tags_role": "",
    "dedupe_key": "8543afba05ff96b8",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -747,7 +778,7 @@
    "tags_role": "",
    "dedupe_key": "9f085e47ce1fc604",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -779,7 +810,7 @@
    "tags_role": "",
    "dedupe_key": "238e454dcdeb97be",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -812,7 +843,7 @@
    "tags_role": "",
    "dedupe_key": "5699a69afff43e0d",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -844,7 +875,7 @@
    "tags_role": "",
    "dedupe_key": "60a73fc36e5e6ba1",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -876,7 +907,7 @@
    "tags_role": "",
    "dedupe_key": "e376d4c9427e0b75",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -907,7 +938,7 @@
    "tags_role": "",
    "dedupe_key": "0e73e2e2945a4b72",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -939,7 +970,7 @@
    "tags_role": "",
    "dedupe_key": "754310f75d720fc8",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -970,7 +1001,7 @@
    "tags_role": "",
    "dedupe_key": "55736e42233aa1b0",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1001,7 +1032,7 @@
    "tags_role": "",
    "dedupe_key": "bcb7a1eb1e0247cb",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1033,7 +1064,7 @@
    "tags_role": "",
    "dedupe_key": "0e73e2e2945a4b72",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1065,7 +1096,7 @@
    "tags_role": "",
    "dedupe_key": "b45ab325d1c22334",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1097,7 +1128,7 @@
    "tags_role": "",
    "dedupe_key": "d186e8cbcbdfbce3",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1129,7 +1160,7 @@
    "tags_role": "",
    "dedupe_key": "fd5a409f63dc12e5",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1160,7 +1191,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1192,7 +1223,7 @@
    "tags_role": "",
    "dedupe_key": "2139e0e9afa086b1",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1224,7 +1255,7 @@
    "tags_role": "",
    "dedupe_key": "fd5a409f63dc12e5",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1255,7 +1286,7 @@
    "tags_role": "",
    "dedupe_key": "f02cfd8a9c5b079d",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1286,7 +1317,7 @@
    "tags_role": "",
    "dedupe_key": "2088529a831e530e",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1318,7 +1349,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1350,7 +1381,7 @@
    "tags_role": "",
    "dedupe_key": "97ebf405af5fbe96",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1381,7 +1412,7 @@
    "tags_role": "",
    "dedupe_key": "2c99a89ebd53c3a5",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1414,7 +1445,7 @@
    "tags_role": "",
    "dedupe_key": "2088529a831e530e",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1446,7 +1477,7 @@
    "tags_role": "",
    "dedupe_key": "dc658af818ac98ce",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1477,7 +1508,7 @@
    "tags_role": "",
    "dedupe_key": "231133927ae283fd",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -1509,7 +1540,7 @@
    "tags_role": "",
    "dedupe_key": "791842a099bafb22",
    "first_seen": "2026-10-31T04:47:08+00:00",
-   "last_seen": "2026-11-02T00:38:29+00:00",
+   "last_seen": "2026-11-03T00:32:22+00:00",
    "is_active": 1,
    "raw_json": "{\"empID\": \"1521\"}",
    "matched_subject": [
@@ -3504,30 +3535,30 @@
  "health": [
   {
    "name": "eslcafe",
-   "status": "ok",
-   "summary": "297/297 jobs · 6 req",
-   "ran_at": "2026-11-02T00:37:12+00:00",
-   "notes": ""
+   "status": "warn",
+   "summary": "0 jobs · 0 req",
+   "ran_at": "2026-11-03T00:30:36+00:00",
+   "notes": "china/jobType=1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=china&jobType=1&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | china/jobType=2: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=china&jobType=2&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | korea/jobType=1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=korea&jobType=1&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | korea/jobType=2: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=korea&jobType=2&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | international/jobType=1: failed after 3 attempts: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.eslcafe.com'. (_ssl.c:1082)> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=international&jobType=1&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | international/jobType=2: failed after 3 attempts: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.eslcafe.com'. (_ssl.c:1082)> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=international&jobType=2&sortColumn=SortOrder&sortType=asc&page=1&size=1000)"
   },
   {
    "name": "the_unijobs",
-   "status": "ok",
-   "summary": "174/173 jobs · 9 req",
-   "ran_at": "2026-11-02T00:37:20+00:00",
-   "notes": ""
+   "status": "warn",
+   "summary": "0 jobs · 0 req",
+   "ran_at": "2026-11-03T00:30:41+00:00",
+   "notes": "discipline 5 page 1: failed after 3 attempts: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.timeshighereducation.com'. (_ssl.c:1082)> (https://www.timeshighereducation.com/unijobs/searchjobs/?AcademicDiscipline=5&sort=Date&page=1)"
   },
   {
    "name": "echinacareers",
    "status": "ok",
    "summary": "1027/1027 jobs · 101 req",
-   "ran_at": "2026-11-02T00:38:29+00:00",
+   "ran_at": "2026-11-03T00:32:22+00:00",
    "notes": "96/100 employers had no jobs"
   },
   {
    "name": "echinacities",
    "status": "ok",
-   "summary": "84 jobs · 5 req",
-   "ran_at": "2026-11-02T00:38:39+00:00",
+   "summary": "87 jobs · 5 req",
+   "ran_at": "2026-11-03T00:32:35+00:00",
    "notes": ""
   }
  ]
