@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T02:33:53+00:00",
+ "generated": "2026-11-07T00:59:14+00:00",
  "jobs": [
   {
    "id": 1831,
@@ -3698,28 +3698,28 @@
    "name": "eslcafe",
    "status": "warn",
    "summary": "0 jobs · 0 req",
-   "ran_at": "2026-11-06T01:41:06+00:00",
+   "ran_at": "2026-11-07T00:43:32+00:00",
    "notes": "china/jobType=1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=china&jobType=1&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | china/jobType=2: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=china&jobType=2&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | korea/jobType=1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=korea&jobType=1&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | korea/jobType=2: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=korea&jobType=2&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | international/jobType=1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=international&jobType=1&sortColumn=SortOrder&sortType=asc&page=1&size=1000) | international/jobType=2: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.eslcafe.com/api/list/PostAJobList?jobBoardSlug=international&jobType=2&sortColumn=SortOrder&sortType=asc&page=1&size=1000)"
   },
   {
    "name": "the_unijobs",
    "status": "warn",
    "summary": "0 jobs · 0 req",
-   "ran_at": "2026-11-06T01:41:11+00:00",
+   "ran_at": "2026-11-07T00:58:56+00:00",
    "notes": "discipline 5 page 1: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.timeshighereducation.com/unijobs/searchjobs/?AcademicDiscipline=5&sort=Date&page=1)"
   },
   {
    "name": "echinacareers",
    "status": "error",
    "summary": "0 jobs · 0 req",
-   "ran_at": "2026-11-06T01:58:55+00:00",
+   "ran_at": "2026-11-07T00:59:01+00:00",
    "notes": "sitemap: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://www.echinacareers.com/Home/SiteMap)"
   },
   {
    "name": "echinacities",
    "status": "warn",
    "summary": "0 jobs · 0 req",
-   "ran_at": "2026-11-06T02:33:53+00:00",
+   "ran_at": "2026-11-07T00:59:14+00:00",
    "notes": "keyword 'computer' offset 0: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://jobs.echinacities.com/jobs/search/?employeeId=0&keyword=computer&lang=en) | keyword 'ICT' offset 0: failed after 3 attempts: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://jobs.echinacities.com/jobs/search/?employeeId=0&keyword=ICT&lang=en) | returned zero rows — treating as unverified, not as 'nothing new'"
   }
  ]
